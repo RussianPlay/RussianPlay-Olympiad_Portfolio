@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul class="nav navbar-nav navbar-left" id="">
+        <li class="active">
+            <a href="#" data-nav-section="home" class="navbar_control_el1"></a><div class="navbar_control_el_icon"></div>
+        </li>
+        <li class="active">
+            <a href="#author_info" data-nav-section="home1" class="navbar_control_el2"></a><div class="navbar_control_el_icon"></div>
+        </li>
+        <li class="active">
+            <a href="#help_info" data-nav-section="home2" class="navbar_control_el3"></a><div class="navbar_control_el_icon"></div>
+        </li>
+    </ul>
+
+    <div class="initial_view">
+        <div class="hello_content">
+            <p class="hello_text _anim-items">Привет!</p>
+        </div>
+    </div>
+    <div class="header_image line">
+        <img class=line" src="{{ url_for('static', filename='img/header_line.jpg') }}">
+    </div>
+    <div class="general_info">
+        <div class="block-sticky-image">
+            <div class="general_info_image">
+                <div class="bg-about" id="author_info"></div>
+                <p class="about_content_part">Меня зовут Эльмир. Я Учусь в 10 классе и хорошо разбираюсь в программировании.
+                    Я знаю Python и C++ и умею хорошо использовать их библиотеки. Если говорить про Web программирование,
+                    то я умею уже хорошо писать код на нем как frontend, так и backend сайта. Меня очень сильно зацепило
+                    ML-программирование. Пока изучаю его и в скором времени пойду в специальность именно по этому направлению</p>
+
+                <div class="prog_lang_icons">
+                    <img src="{{ url_for('static', filename='img/python.png') }}">
+                    <img src="{{ url_for('static', filename='img/c++.png') }}">
+                </div>
+
+                <p class="about_content_part">Я также являюсь учеником в "Академии Яндекса" и уже скоро закончу его
+                    (проучился уже почти 2 года). За все обучение я сделал несколько проектов в сфере видеоигр и
+                    графики. Подробнее о них можете посмотреть на моем github-е(ссылка внизу) или во вкладке сайта
+                    "мои проекты"</p>
+
+                <p class="about_content_part">Сейчас я обучпюсь в только что открывшемся новом проекте Яндекс лицея:
+                    "Яндекс++" в направлении machine-learning программиста</p>
+
+                <p class="about_content_part">Я всегда стараюсь изучать все сферы в программировании, начиная с web-а и
+                    вплоть до написания своего ИИ. Мне всегда было интересно изучать новые бмблиотеки и потом уже
+                    использовать в реальной жизни. </p>
+
+                <p class="about_content_part">Недавно я начал я испытывать себя как фрилансер в разных биржах.
+                    Я обычно создавал telegram и discord боты, парсеры для разных сайтов и ИИ распознавания текста и
+                    изображний</p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

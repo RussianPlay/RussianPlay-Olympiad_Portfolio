@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="nav navbar-nav navbar-left" id="">
+    <li class="active">
+        <a href="#" data-nav-section="home" class="navbar_control_el1"></a><div class="navbar_control_el_icon"></div>
+    </li>
+    <li class="active">
+        <a href="#projects_info" data-nav-section="home1" class="navbar_control_el2"></a><div class="navbar_control_el_icon"></div>
+    </li>
+    <li class="active">
+        <a href="#help_info" data-nav-section="home2" class="navbar_control_el3"></a><div class="navbar_control_el_icon"></div>
+    </li>
+</ul>
+<div class="projects" id="projects_info">
+    <div class="header_image">
+        <img class="crown" src="{{ url_for('static', filename='img/header_joystick.png') }}">
+    </div>
+    <div class="header_text">
+        <h1>Мои проекты</h1>
+    </div>
+    <div class="header_image line">
+        <img class=line" src="{{ url_for('static', filename='img/header_line.jpg') }}">
+    </div>
+    <div class="general_info" id="#projects_info">
+        <div class="block-item">
+            <div class="accordion-item">
+                <div class="charter_content">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            King of empires
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                    <div class="charter_content">
+                        <p>“King of empires” или “Путешествие короля империй” – это аркадная мини-игра из игры “Stardew valley”
+                            в стилистике Smash TV , в которую можно сыграть на одном из игровых автоматов в правой части Салуна.
+                            Я взял идею, улучшив графику и добавив несколько новых механик
+                        </p>
+                        <div class="large_project_content">
+                            <img src="{{ url_for('static', filename='img/projects/project_1_part_1.jpg') }}">
+                            <img src="{{ url_for('static', filename='img/projects/project_1_part_2.jpg') }}">
+                            <img src="{{ url_for('static', filename='img/projects/project_1_part_3.jpg') }}">
+                            <img src="{{ url_for('static', filename='img/projects/project_1_part_4.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-item">
+            <div class="accordion-item">
+                <div class="charter_content">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Graphic editor
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                    <div class="charter_content">
+                        <p>Мой графический редактор. Даже лучше Paint-а!</p>
+                        <img src="{{ url_for('static', filename='img/projects/project_2.jpg') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-item">
+            <div class="accordion-item">
+                <div class="charter_content">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Game Sapper
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                    <div class="charter_content">
+                        <p>Всеми любимая игра "Сапёр"</p>
+                        <img src="{{ url_for('static', filename='img/projects/project_3.jpg') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

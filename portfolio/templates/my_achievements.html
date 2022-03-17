@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% block content %}
+<ul class="nav navbar-nav navbar-left" id="">
+    <li class="active">
+        <a href="#" data-nav-section="home" class="navbar_control_el1"></a><div class="navbar_control_el_icon"></div>
+    </li>
+    <li class="active">
+        <a href="#achievements_info" data-nav-section="home1" class="navbar_control_el2"></a><div class="navbar_control_el_icon"></div>
+    </li>
+    <li class="active">
+        <a href="#help_info" data-nav-section="home2" class="navbar_control_el3"></a><div class="navbar_control_el_icon"></div>
+    </li>
+</ul>
+<div>
+    <div class="total_charters" id="achievements_info">
+        <div class="header_image">
+            <img class="crown" src="{{ url_for('static', filename='img/header_crown.png') }}">
+        </div>
+        <div class="header_text">
+            <h1>Лучшие Грамоты</h1>
+        </div>
+        <div class="header_image line">
+            <img class=line" src="{{ url_for('static', filename='img/header_line.jpg') }}">
+        </div>
+        <div class="general_info">
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Яндекс лицей
+                                </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/total_charter_1.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Эдэби марафон
+                                </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/total_charter_2.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Математика
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/total_charter_3.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Геология
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/total_charter_4.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Татарский язык
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/total_charter_5.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rest_charters">
+        <div class="header_text">
+            <h1>Остальные Грамоты</h1>
+        </div>
+        <div class="header_image">
+            <img class="line" src="{{ url_for('static', filename='img/header_line.jpg') }}">
+        </div>
+        <div class="general_info">
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Математика эврика
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/charter_1.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                Технология
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/charter_2.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Математика эврика
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/charter_3.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="accordion-item">
+                    <div class="charter_content">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Разное
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                         data-bs-parent="#accordionExample">
+                        <div class="charter_content">
+                            <img src="{{ url_for('static', filename='img/charters/charter_4.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

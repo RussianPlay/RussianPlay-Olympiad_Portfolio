@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+
+.content {
+    background-image: url('../img/l1.jpg');
+    background-attachment: fixed;
+    -webkit=background-size: cover;
+    background-size: cover;
+    background-repeat: x-repeat;
+    padding: 2vh 0vh 0vh 0vh;
+}
+
+.nav-link px-2 link-dark{
+    font-size: 16px;
+}
+
+.nav a.hover {
+    background-color: #ddd;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.general_info {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+    padding: 0vh 0vh 2vh 0vh;
+}
+
+.prog_lang_icons {
+    display: inline-flex;
+    flex-wrap: wrap
+    justify-content: space-around;;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+
+.general_about_content {
+    font-family: 'Fira Sans', 'Lucida Console', sans-serif;
+    min-width: 400px;
+    max-width: 400px;
+}
+.about_content_part {
+    background-color: #B0C1B2;
+    border: 4px solid;
+    border-color: #bbbbbb;
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 62vh;
+    margin-top: 2vh;
+}
+
+.bg-about {
+    background: url('../img/author.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    float: left;
+    max-width: 60vh;
+    min-width: 60vh;
+    max-height: 60vh;
+    min-height: 60vh;
+
+
+}
+
+.block-sticky-image .general_info_image .bg-about{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+
+
+header:not(:hover) {
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background: url('../img/header_img_part_1.jpg');
+}
+#panel #hidden_panel {
+    -webkit-background-size: cover;
+    min-height: 10vh:
+    background: url('../img/hello_img.jpg');
+}
+header:hover {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background: url('../img/hello_img.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-width: 180vh;
+    min-height: 10vh:
+}
+
+
+.hello_text {
+    font-size: 70px;
+    margin: 0vh 0vh 60vh 0vh;
+    transform: translate(0px; 120%);
+    opacity: 1;
+    transition: all 3s ease 0s;
+}
+
+.hello_text ._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.header_content {
+    background-image: url("../img/header_img.jpg");
+    min-height: 968px;
+}
+
+.header_content::hover {
+    top: 100px;
+}
+
+.help_container {
+    max-width: 158.7vh;
+    margin-left: 19.3vh;
+
+    background-color: #252525;
+}
+
+.help_container li, h3, h4, a, .message_help {
+    color: white;
+    font-family: 'Lucida Console', sans-serif;
+}
+
+.icon-vkontakte {
+    background-image: url("../img/vk.png");
+    background-repeat: no-repeat;
+    min-height: 64px;
+    margin-bottom: 10px;
+}
+
+.icon-instagram {
+    background-image: url("../img/instagram.png");
+    background-repeat: no-repeat;
+    min-height: 64px;
+    margin-bottom: 10px;
+}
+
+.icon-github-alt {
+    background-image: url("../img/github.png");
+    background-repeat: no-repeat;
+    min-height: 64px;
+}
+
+.nav.navbar-nav.navbar-left {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    left: 18px;
+}
+
+.navbar_control_el_icon {
+    margin-bottom: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: #161a1e;
+    background: white;
+}
+
+.initial_view .hello_content {
+    position: absolute;
+    top: 10vh; left: 85vh; bottom: 0vh; right: 0vh;
+
+}
+.hello_text._anim-items {
+    color: white;
+}
+
+.accordion-header button {
+    padding: 1.5vh 0vh 1.5vh 27vh;
+}
+/* ---------------------------- Only my_achievements.html elements ---------------------------- */
+.charter_content {
+    min-width: 67vh;
+}
+
+.charter_content img {
+    max-width: 67vh;
+}
+
+.total_charters .header_text {
+    margin: 0 auto;
+    width: 34.5vh;
+}
+
+.rest_charters .header_text {
+    margin: 0 auto;
+    width: 40vh;
+}
+.projects .header_text {
+    margin: 0 auto;
+    width: 27vh;
+}
+.header_image .crown, .header_image .line {
+    -webkit-background-size: cover;
+    background-size: cover;
+    max-width: 30vh;
+}
+
+.header_image img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* ---------------------------- Only my_projects.html elements ---------------------------- */
+
+.large_project_content {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+
+
+
